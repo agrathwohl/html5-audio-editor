@@ -17,11 +17,6 @@
     </style>
     <link href="bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
 
-    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
-    <!--[if lt IE 9]>
-      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-
     <!-- Le fav and touch icons -->
     <link rel="shortcut icon" href="bootstrap/ico/favicon.ico">
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="bootstrap/ico/apple-touch-icon-144-precomposed.png">
@@ -107,7 +102,7 @@
             <div id="app-progress" class="bar" style="width: 0%;"></div>
           </div>
         </div>
-      </div>  
+      </div>
       <br>
       <div class="row">
         <div class="span1"><br></div>
@@ -115,13 +110,13 @@
           <h6>Gain</h6>
           <div class="well" style="height: 130px; position:relative">
             <p>Change the volume of the selected audio sequence with the given gain multiplicator.</p>
-            
+
               <div class="pull-right" style=" position:absolute; bottom: 5px; width: 100%;" >
                 <div class="btn-group" >
-                  
+
                     <button class="btn btn-success" onclick="decrease_db()"><i class="icon-minus"></i></button>
                     <button id="gain-db" class="btn disabled" onclick="gain_btn_clicked()">0 db</button>
-                    <button class="btn btn-success" onclick="increase_db()"><i class="icon-plus"></i></button> 
+                    <button class="btn btn-success" onclick="increase_db()"><i class="icon-plus"></i></button>
                 </div>
               </div>
             <script type="text/javascript">
@@ -143,7 +138,7 @@
                 {
                   var gain_btn = $('#gain-db')[0];
 
-                  gain_btn.innerHTML = db_gain + ' db'; 
+                  gain_btn.innerHTML = db_gain + ' db';
 
                   if (db_gain === 0)
                   {
@@ -203,27 +198,12 @@
 
       <div class="row">
         <div class="span8">
-        
+
         </div>
       </div>
 
-      <!-- Le Footer
-    ================================================== --> 
-       <footer class="footer">
-        
-        <br>
-        <p class="pull-left"><a href="#">Back to top</a></p>
-        <blockquote class="pull-right">
-        <p>This Web-Application was written by Rainer Heynke <a href="http://twitter.com/plucked">@plucked</a></p>
-        <p>I used <a href="http://twitter.github.com/bootstrap/index.html">Bootstrap</a> for the design and especially the theme <a href="http://bootswatch.com/slate/">Slate</a></p>
-        <p>Parts of the code were taken from the <a href="http://audacity.sourceforge.net/">Audacity</a> project and converted from C++ to JavaScript</p>
-	<p>The project is available at github: <a href="https://github.com/plucked/html5-audio-editor">html5-audio-editor</a></p>
-      </blockquote>
-      </footer>
- 
-     
     <!-- Le Help
-    ================================================== -->  
+    ================================================== -->
     <div class="modal hide" id="helpAsModal">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal">×</button>
@@ -231,26 +211,6 @@
       </div>
       <div class="modal-body">
         <p>Help text … TODO</p>
-      </div>
-      <div class="modal-footer">
-        <a href="#" class="btn" data-dismiss="modal">Close</a>
-      </div>
-    </div>
-
-     <!-- Le Startup
-    ================================================== -->  
-    <div class="modal hide" id="welcomeAsModal">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal">×</button>
-        <h3>Information</h3>
-      </div>
-      <div class="modal-body">
-        <p>Welcome to my HTML 5 Audio Editor. You can edit WAVE, OGG and MP3 files and export them as WAVE. This application uses no extra plugins like Flash or Silverlight, it's written in JavaScript and HTML.</p>
-        <p>I used some of the implementations given the design draft of the HTML5 and Web Audio APIs. It is currently supported in all the major browsers except Internet Explorer.</p>
-        <p>Your browser support is: <span id="browser_support" class="label">Unknown</span></p>
-        <p>Have fun, this is a prototype and my first web project.</p>
-
-        
       </div>
       <div class="modal-footer">
         <a href="#" class="btn" data-dismiss="modal">Close</a>
@@ -277,8 +237,8 @@
 
 
     <script type="text/javascript" src="app/js/ACFIRFilter.js"></script>
-    <script type="text/javascript" src="app/js/ACAAFilter.js"></script> 
-    <script type="text/javascript" src="app/js/ACSpectrum.js"></script>    
+    <script type="text/javascript" src="app/js/ACAAFilter.js"></script>
+    <script type="text/javascript" src="app/js/ACSpectrum.js"></script>
     <script type="text/javascript" src="app/js/ACFFT.js"></script>
     <script type="text/javascript" src="app/js/SpectrumWorker.js"></script>
     <script type="text/javascript" src="app/js/SpectrumDisplay.js"></script>
